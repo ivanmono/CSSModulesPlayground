@@ -1,0 +1,13 @@
+.three {
+    --number: calc(100vw / 4);
+}
+
+.four {
+    --number: calc(100vw / 5);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--number)), 1fr));
+    gap: 2rem;
+}
