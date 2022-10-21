@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button/Button'
 import Rect from '../components/Rect/Rect'
 import Layout from '../components/Layout/Layout'
+import Card from '../components/Card/Card'
 
 export default class Home extends React.Component {
     render() {
@@ -10,8 +11,12 @@ export default class Home extends React.Component {
                 <h1 className="mb-sml-2">CSS Modules playground</h1>
                 <p>Let's play!</p>
 
-                <Layout size={"four"} />
-
+                <Layout size={"four"}>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </Layout>
 
                 <Rect value={"I am rectangle."} toggle={"is-toggled"} color={"red"} margin={"mb-sml-2"} />
 

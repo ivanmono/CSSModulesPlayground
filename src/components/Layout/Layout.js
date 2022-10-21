@@ -1,16 +1,11 @@
 import React from 'react'
 import lyt from './component.layout.css'
-import Card from '../Card/Card'
 
-const Layout = ({size}) => {
+const Layout = ({ size, children }) => {
 
     return (
         <div className={`${lyt.layout} ${lyt[size]}`}>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+            {children}
         </div>
     )
 }
