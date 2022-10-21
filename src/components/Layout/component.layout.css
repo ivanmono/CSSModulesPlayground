@@ -1,9 +1,17 @@
-.three {
+.grid-3 {
     --number: calc(100vw / 4);
 }
 
-.four {
+.grid-4 {
     --number: calc(100vw / 5);
+}
+
+.grid-5 {
+    --number: calc(100vw / 6);
+}
+
+.grid-6 {
+    --number: calc(100vw / 7);
 }
 
 .layout {

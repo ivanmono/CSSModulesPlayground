@@ -4,7 +4,7 @@ import lyt from './component.layout.css'
 const Layout = ({ size, children }) => {
 
     return (
-        <div className={`${lyt.layout} ${lyt[size]}`}>
+        <div className={`${lyt.layout} ${lyt[`grid-${size}`]}`}>
             {children}
         </div>
     )
